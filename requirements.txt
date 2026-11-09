@@ -1,0 +1,25 @@
+# Lower bounds reflecting the APIs this code actually calls, for an easier
+# install on an existing environment.
+#
+# These ranges have NOT been tested. The only combination that has been
+# executed is the one pinned in requirements-lock.txt — use that file if you
+# need to reproduce the published numbers exactly.
+#
+# Basis for each floor:
+#   numpy        np.random.default_rng, modern dtype behaviour
+#   scipy        scipy.stats.linregress, signal.butter/filtfilt
+#   pandas       read_csv compression inference, pivot_table
+#   mne          plot_topomap sphere= and extrapolate=, cluster permutation
+#   matplotlib   constrained text extents used by the figure QC scripts
+#   statsmodels  multipletests(method='fdr_bh')
+#   joblib       Parallel/delayed
+#   pingouin     rm_anova; stats.py tolerates both the hyphen and underscore
+#                column spellings, so 0.5 and later both work
+numpy>=1.24
+scipy>=1.10
+pandas>=1.5
+mne>=1.0
+matplotlib>=3.6
+statsmodels>=0.13
+joblib>=1.2
+pingouin>=0.5

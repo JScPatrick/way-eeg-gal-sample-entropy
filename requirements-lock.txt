@@ -1,0 +1,14 @@
+# EXACT versions used to produce every published figure and statistic.
+# This is the only combination that has actually been executed and verified.
+# Requires Python >=3.12 (numpy and scipy at these versions both declare it).
+#
+#   pip install -r requirements-lock.txt
+#
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+mne==1.13.2
+matplotlib==3.11.2
+statsmodels==0.15.0
+joblib==1.6.0
+pingouin==0.7.0
