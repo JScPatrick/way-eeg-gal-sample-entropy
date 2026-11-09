@@ -30,3 +30,6 @@ env/
 .vscode/
 .DS_Store
 .ipynb_checkpoints/
+
+# Part of WAY-EEG-GAL (Supplementary File 2, Utilities.zip), not of this code.
+data/chanlabels_32channel.xyz
